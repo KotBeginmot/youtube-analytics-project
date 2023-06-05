@@ -2,8 +2,8 @@ from src.channel import Channel
 
 
 if __name__ == '__main__':
-    moscowpython = Channel('UC-OVMPlMA3-YCIeg4z5z23A')#экземпляр
-    moscowpython.print_info()#атрибут
+    moscowpython = Channel('UC-OVMPlMA3-YCIeg4z5z23A')
+    moscowpython.print_info()
 
     """
 {
@@ -13,8 +13,7 @@ if __name__ == '__main__':
     "totalResults": 1,
     "resultsPerPage": 5
   },
-  "items": 
-  [
+  "items": [
     {
       "kind": "youtube#channel",
       "etag": "cPh7A8SKcZxxs_UPCiBaXP1wNDk",
