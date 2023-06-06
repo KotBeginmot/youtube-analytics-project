@@ -39,3 +39,24 @@ class Channel:
         """Сохраняет значение атрибутов экземпляра"""
         with open(date, 'a') as file:
             file.write(str(self.channel))
+
+    def __str__(self):
+        return f'{self.title} ({self.url})'
+
+    def __add__(self, other):
+        return self.subscribe_count + other.subscribe_count
+
+    def __sub__(self, other):
+        return self.subscribe_count - other.subscribe_count
+
+    def __ge__(self, other):
+        return self.subscribe_count >= other.subscribe_count
+
+    def __lt__(self, other):
+        return self.subscribe_count < other.subscribe_count
+
+    def __le__(self, other):
+        return self.subscribe_count <= other.subscribe_count
+
+    def __gt__(self, other):
+        return self.subscribe_count > other.subscribe_count
