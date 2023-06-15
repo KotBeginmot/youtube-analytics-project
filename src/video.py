@@ -4,7 +4,8 @@ import os
 
 class Video:
     """Функция для получения информации о видео с YouTube"""
-    API_KEY = os.getenv('YT_KEY')
+    #API_KEY = os.getenv('YT_KEY')
+    API_KEY = "AIzaSyAhWpNBvT-JtKHFdF0tM1ksiLSNTeT2SKs"
     youtube = build('youtube', 'v3', developerKey=API_KEY)
 
     def __init__(self, id_video):
